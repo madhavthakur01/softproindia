@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #fff;
+}
+
+.heading {
+  font-size: 40px;
+  margin: 40px;
+  color: #000;
+}
+
+.tcs-wrapper {
+  padding: 0 40px 60px;
+}
+
+/* ===== CARDS CONTAINER ===== */
+.cards {
+  position: relative;
+  display: flex;
+  height: 420px;
+  overflow: hidden;           /* 🔑 hard clip */
+  border-radius: 12px;
+}
+
+/* ===== BACKGROUND LAYERS ===== */
+.bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.6s ease;
+  z-index: 0;
+}
+
+.bg.active {
+  opacity: 1;
+}
+
+.bg-1 {
+  background-image: linear-gradient(to bottom, transparent, black),
+    url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d");
+}
+.bg-2 {
+  background-image: linear-gradient(to bottom, transparent, black),
+    url("https://images.unsplash.com/photo-1556761175-4b46a572b786");
+}
+.bg-3 {
+  background-image: linear-gradient(to bottom, transparent, black),
+    url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d");
+}
+.bg-4 {
+  background-image: linear-gradient(to bottom, transparent, black),
+    url("https://images.unsplash.com/photo-1498050108023-c5249f4df085");
+}
+
+/* ===== MOVING BLUE OVERLAY ===== */
+.hover-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+  background: rgba(0, 82, 204, 0.75);
+  transform: translate3d(0, 0, 0);
+  transition: transform 0.45s cubic-bezier(.4,0,.2,1);
+  will-change: transform;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* ===== CARDS ===== */
+.card {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: rgba(0,0,0,0.55);
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.card h3,
+.card p {
+  margin: 0;
+  position: relative;
+  z-index: 3;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .hover-indicator {
+    display: none;
+  }
+
+  .card {
+    height: 260px;
+  }
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TCS Style Expanding Cards</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- <section class="container-fluid py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center fw-bold mb-5" data-aos="fade-up">
+      Our Capabilities
+    </h2>
+
+    <div class="expanding-wrapper">
+
+      <div class="exp-card active" data-aos="fade-right"
+           style="--bg:url('./images/digital.jpg')">
+        <div class="icon"></div>
+        <h4>Digital</h4>
+        <p>Driving digital transformation with modern UI, UX and platforms.</p>
+      </div>
+
+      <div class="exp-card" data-aos="fade-right"
+           style="--bg:url('./images/cloud.jpg')">
+        <div class="icon"></div>
+        <h4>Cloud</h4>
+        <p>Scalable, secure and future-ready cloud solutions.</p>
+      </div>
+
+      <div class="exp-card" data-aos="fade-left"
+           style="--bg:url('./images/ai.jpg')">
+        <div class="icon"></div>
+        <h4>AI & Data</h4>
+        <p>AI-powered analytics for smarter business decisions.</p>
+      </div>
+
+      <div class="exp-card" data-aos="fade-left"
+           style="--bg:url('./images/consulting.jpg')">
+        <div class="icon"></div>
+        <h4>Consulting</h4>
+        <p>Business consulting aligned with technology strategy.</p>
+      </div>
+
+    </div>
+  </div>
+</section> -->
+  <section class="container-fluid py-5 tech-section">
+    <div class="container">
+
+      <h2 class="text-center fw-bold mb-5">
+        Our Technologies
+      </h2>
+
+      <div class="tech-wrapper">
+
+        <div class="tech-card">
+          <div class="card-view d-flex justify-content-evenly align-items-center">
+          <div class="tech-icon">🌐</div>
+          <h4>Frontend</h4>
+          </div>
+          <div class="tech-content">
+            
+            <p>HTML, CSS, JavaScript, Bootstrap, React for responsive UI.</p>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon">⚙️</div>
+          <div class="tech-content">
+            <h4>Backend</h4>
+            <p>PHP, Laravel, Node.js for secure and scalable systems.</p>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon">🗄️</div>
+          <div class="tech-content">
+            <h4>Database</h4>
+            <p>MySQL, MongoDB with optimized data handling.</p>
+          </div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-icon">☁️</div>
+          <div class="tech-content">
+            <h4>Cloud & DevOps</h4>
+            <p>AWS, GitHub, CI/CD for fast deployment.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+
+  <script>
+    AOS.init({
+      duration: 900,
+      once: true
+    });
+  </script>
+
+</body>
+
+</html>

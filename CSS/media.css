@@ -1,0 +1,189 @@
+/* =============================================================
+   RESPONSIVE OVERRIDES (CLEAN & SAFE)
+   ============================================================= */
+
+/* ---------- TABLET & BELOW (≤991px) ---------- */
+@media (max-width: 991px) {
+
+  body {
+    padding-top: clamp(90px, 12vw, 110px);
+  }
+
+  .topnav,
+  .navbar {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero-section {
+    height: auto;
+    min-height: calc(100vh - 90px);
+    padding: 40px 16px;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(1.6rem, 4.5vw, 2rem);
+    text-align: center;
+  }
+
+  .hero-section p {
+    max-width: 100%;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .hero-actions {
+    justify-content: center;
+  }
+
+  /* Mobile-friendly Mega Dropdown */
+  .mega-dropdown {
+    position: static;
+    width: 100%;
+    padding: 16px;
+    box-shadow: none;
+    border-radius: 12px;
+  }
+}
+
+/* ---------- MOBILE (≤768px) ---------- */
+@media (max-width: 768px) {
+
+  /* Disable heavy video */
+  .hero-section video {
+    display: none;
+  }
+
+  .hero-section {
+    background:
+      linear-gradient(180deg, rgba(0,0,0,0.45), rgba(0,0,0,0.45)),
+      url("../ASSETS/img/hero-mobile.jpg") center / cover no-repeat;
+  }
+
+  .hero-section h1 {
+    font-size: clamp(1.4rem, 5vw, 1.8rem);
+  }
+
+  .hero-section p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .btn-primary,
+  .btn-secondary,
+  .btn-explore {
+    width: 100%;
+    max-width: 320px;
+    justify-content: center;
+  }
+}
+
+/* ---------- SMALL PHONES (≤576px) ---------- */
+@media (max-width: 576px) {
+
+  body {
+    padding-top: 90px;
+  }
+  .softpro{
+    font-size: 15px !important;
+  }
+  .social-media{
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+  }
+  .contact{
+    display: flex;
+    justify-content: space-evenly !important;
+    align-items: center !important;
+  }
+    swiper-slide img{
+    height: 50px !important;
+    width: auto;
+  }
+
+  .hero-section {
+    padding: 32px 14px;
+  }
+
+  .navbar-brand .brand {
+    font-size: 1.1rem;
+  }
+
+  .topnav .social {
+    font-size: 0.85rem;
+  }
+
+  .btn-primary{
+    text-align: center;
+  }
+  .btn-secondary{
+    text-align: center;
+  }
+  .about-image img{
+    height: 100%;
+    width: 85vw;
+    padding-left:1rem;
+  }
+
+}
+
+/* ---------- EXTRA SMALL (≤320px) ---------- */
+@media (max-width: 320px) {
+
+  .hero-section h1 {
+    font-size: 1.3rem;
+  }
+
+  .hero-section p {
+    font-size: 0.85rem;
+  }
+
+}
+/* =============================================================
+   MOBILE SPACING & HEIGHT FIXES (SAFE OVERRIDES)
+   ============================================================= */
+@media (max-width: 768px) {
+
+  /* Hero section extra height remove (min-vh-100 issue) */
+  .hero-section .min-vh-100 {
+    min-height: auto !important;
+  }
+
+  /* Reduce large vertical spacing on mobile (my-5, mb-5) */
+  .my-5 {
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  .mb-5 {
+    margin-bottom: 2rem !important;
+  }
+
+  /* Remove negative / extra margins in hero text */
+  .hero-subtitle {
+    margin-top: 0 !important;
+  }
+
+  /* Center CTA buttons on mobile */
+  .hero-actions {
+    justify-content: center !important;
+  }
+
+  /* Expanding cards spacing control */
+  .expanding-cards {
+    gap: 12px;
+    margin-top: 1.5rem !important;
+    margin-bottom: 1.5rem !important;
+  }
+
+  /* Director section padding reduce */
+  .director-content {
+    padding: 1rem !important;
+  }
+}
+
+@media (max-width: 425px){
+
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Typewriter JS</title>
+</head>
+<body>
+
+<h1>
+  Hi, I am <span id="typewriter"></span>
+</h1>
+  <!-- Typewriter JS CDN -->
+  <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
+
+  <script>
+    var app = document.getElementById('typewriter');
+
+    var typewriter = new Typewriter("#typewriter", {
+  loop: true,
+  delay: 75,
+})
+.typeString("Madhav")
+.pauseFor(1000)
+.deleteAll()
+.typeString("a Developer")
+.pauseFor(1000)
+.deleteAll()
+.typeString("a Learner 🚀")
+.start();
+
+
+
+  </script>
+
+</body>
+</html>
