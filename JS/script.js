@@ -93,3 +93,13 @@ counters.forEach(counter => {
   };
   update();
 });
+document.querySelectorAll('.card-item').forEach(card => {
+  card.addEventListener('click', () => {
+    card.classList.toggle('active');
+  });
+});
+document.querySelectorAll('.nav-item.dropdown > .nav-link').forEach(link => {
+  if (window.innerWidth < 992) {
+    link.removeAttribute('data-bs-toggle');
+  }
+});
